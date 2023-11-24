@@ -1,0 +1,141 @@
+/* RESET */
+* {
+box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My styles */
+
+.container {
+width: 1200px;
+margin: 0 auto;
+}
+
+.first, .second, .third {
+font-size: 0;
+margin: 0 auto;
+}
+.first {
+background: blue;
+font-size: 10px;
+}
+
+.first > div {
+display: inline-block;
+width: 400px;
+height: 300px;
+border: 2px solid red;
+display: table-cell;
+}
+
+.second {
+background: green;
+font-size: 10px;
+height: 300px;
+}
+
+.second > div {
+display: table-cell;
+}
+
+.second > div > div {
+border: 2px solid red; 
+}
+
+.second > div + div {
+  display: table-cell;
+}
+
+.second_part_one > div {
+width: 800px;
+height: 150px;
+}
+
+.second_part_two > div {
+width: 400px;
+height: 100px;
+}
+
+.third {
+background-color: orangered;
+font-size: 10px; 
+display: table-cell; 
+}
+
+.third > div {
+border: 2px solid red; 
+display: table-cell;
+}
+
+.third_part_one {
+width: 400px;
+height: 300px;
+}
+
+.third_part_two {
+width: 800px;
+height: 300px;
+display: table-cell; 
+}
+
+.third_subgroup_one {
+height: 150px;
+width: 800px; 
+border: 2px solid red; 
+}
+
+.third_subgroup_two {
+height: 150px;
+/* border: 2px solid red; */
+display: table-cell; 
+}
+
+.third_subgroup_two > div {
+/* border: 2px solid red;  */
+display: table-cell; 
+width: 400px;
+height: 150px;
+} 
+
+.third_subgroup_two > div > div {
+height: 75px;
+border: 2px solid red;
+}
+
