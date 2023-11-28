@@ -120,6 +120,12 @@ table {
 	border-spacing: 0;
 }
 
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
 /* My styles */
 
 .container {
@@ -134,7 +140,7 @@ table {
 .first,
 .second,
 .third {
-	font-size: 0;
+	float: left;
 }
 
 .first {
@@ -142,10 +148,9 @@ table {
 }
 
 .first > div {
-	display: inline-block;
 	width: 400px;
 	height: 400px;
-	font-size: 20px;
+	float: left;
 }
 
 .second {
@@ -153,9 +158,8 @@ table {
 }
 
 .second > div {
-	display: inline-block;
+	float: left;
 	width: 800px;
-	font-size: 20px;
 }
 
 .second > div + div {
@@ -174,8 +178,7 @@ table {
 }
 
 .third > div {
-	display: inline-block;
-	font-size: 20px;
+	float: left;
 }
 .third_part_one {
 	width: 400px;
@@ -190,15 +193,10 @@ table {
 	height: 200px;
 }
 
-.third_subgroup_two {
-	font-size: 0;
-}
-
 .third_subgroup_two > div {
-	display: inline-block;
+	float: left;
 	width: 400px;
 	height: 200px;
-	font-size: 20px;
 }
 
 .third_subgroup_two > div + div {
