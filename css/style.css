@@ -128,6 +128,7 @@ table {
 
 /* My styles */
 
+
 .container {
 	width: 1200px;
 	margin: 0 auto;
@@ -137,28 +138,22 @@ table {
 	outline: 2px solid red;
 }
 
-.first,
-.second,
-.third {
-	float: left;
-}
-
 .first {
 	background: blue;
+  display: flex;
 }
 
 .first > div {
 	width: 400px;
 	height: 400px;
-	float: left;
 }
 
 .second {
 	background: green;
+  display: flex;
 }
 
 .second > div {
-	float: left;
 	width: 800px;
 }
 
@@ -175,11 +170,10 @@ table {
 
 .third {
 	background-color: orange;
+  display: flex;
+  height: 400px;
 }
 
-.third > div {
-	float: left;
-}
 .third_part_one {
 	width: 400px;
 	height: 400px;
@@ -187,22 +181,29 @@ table {
 
 .third_part_two {
 	width: 800px;
+  height: 400px;
 }
 
 .third_subgroup_one {
-	height: 200px;
+  height: 200px;
 }
 
-.third_subgroup_two > div {
-	float: left;
-	width: 400px;
-	height: 200px;
+.third_subgroup_two {
+  height: 200px;
+  width: 800px;
+  display: flex;
 }
 
-.third_subgroup_two > div + div {
-	height: auto;
+.sublast_group_one {
+  width: 400px;
+  height: 200px;
 }
 
-.third_subgroup_two>div>div {
-	height: 100px;
+.sublast_group_two {
+  width: 400px;
+  height: 200px;
+}
+
+.sublast_group_two div {
+  height: 100px;
 }
